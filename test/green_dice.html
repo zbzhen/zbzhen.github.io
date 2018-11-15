@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+  <head> 
+    <title>Green dice</title> 			
+    <script type='text/javascript' src='https://www.x3dom.org/download/x3dom.js'> </script>
+    <link rel='stylesheet' type='text/css' href='https://www.x3dom.org/download/x3dom.css'/>
+    <h1>Interactive HTML with Python and X3D: a green dice example</h1> 
+	    
+
+    <!-- Start of the X3DOM part -->
+
+    <style>
+       x3d
+       {
+          border:2px solid darkorange;
+       }   
+    </style>
+  </head> 
+
+  <body> 
+    <x3d width='1000px' height='700px', margin-left='300px'> 
+      <scene> 
+        <inline url="./data/green_dice.x3d" nameSpaceName="Dice" mapDEFToID="true" onclick=''/>
+      </scene> 
+    </x3d> 
+
+    <!-- End of the X3DOM part -->
+
+  </body>
+</html>
