@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>直线与平面的所成角</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+<script type='text/javascript' src='x3dom/x3dom.js'> </script> 
+<link rel='stylesheet' type='text/css' href='x3dom/x3dom.css'></link> 
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="../htmlppt/css/reveal.css">
+<link rel="stylesheet" href="../htmlppt/css/theme/night.css" id="theme">
+
+<script>
+  function setCube()
+  {
+  if(document.getElementById('simplelp22__line1').getAttribute('transparency')!= '1')
+     document.getElementById('simplelp22__line1').setAttribute('transparency', '1');
+  else 
+     document.getElementById('simplelp22__line1').setAttribute('transparency', '0.5'); 
+  if(document.getElementById('simplelp22__line2').getAttribute('transparency')!= '1')
+     document.getElementById('simplelp22__line2').setAttribute('transparency', '1');
+  else 
+     document.getElementById('simplelp22__line2').setAttribute('transparency', '0.5'); 
+  }
+</script>
+<script>
+function settransparency1()
+{
+	if(document.getElementById('simplelp00__lineinplane').getAttribute('transparency') == '1')
+	{
+		document.getElementById('simplelp00__lineinplane').setAttribute('transparency', '0');
+		document.getElementById('simplelp00__lineoutplane').setAttribute('transparency', '1');
+		document.getElementById('simplelp00__lineinterplane').setAttribute('transparency', '1');
+		document.getElementById('simplelp00__pointA').setAttribute('transparency', '1');
+	}
+	else
+	{
+		document.getElementById('simplelp00__lineinplane').setAttribute('transparency', '1');
+		document.getElementById('simplelp00__lineoutplane').setAttribute('transparency', '1');
+		document.getElementById('simplelp00__lineinterplane').setAttribute('transparency', '1');
+		document.getElementById('simplelp00__pointA').setAttribute('transparency', '1');
+	}
+}
+function settransparency2()
+{
+	if(document.getElementById('simplelp00__lineoutplane').getAttribute('transparency') == '1')
+	{
+		document.getElementById('simplelp00__lineinplane').setAttribute('transparency', '1');
+		document.getElementById('simplelp00__lineoutplane').setAttribute('transparency', '0');
+		document.getElementById('simplelp00__lineinterplane').setAttribute('transparency', '1');
+		document.getElementById('simplelp00__pointA').setAttribute('transparency', '1');
+	}
+	else
+	{
+		document.getElementById('simplelp00__lineinplane').setAttribute('transparency', '1');
+		document.getElementById('simplelp00__lineoutplane').setAttribute('transparency', '1');
+		document.getElementById('simplelp00__lineinterplane').setAttribute('transparency', '1');
+		ocument.getElementById('simplelp00__pointA').setAttribute('transparency', '1');
+	}
+}
+function settransparency3()
+{
+	if(document.getElementById('simplelp00__lineinterplane').getAttribute('transparency') == '1')
+	{
+		document.getElementById('simplelp00__lineinplane').setAttribute('transparency', '1');
+		document.getElementById('simplelp00__lineoutplane').setAttribute('transparency', '1');
+		document.getElementById('simplelp00__lineinterplane').setAttribute('transparency', '0');
+		document.getElementById('simplelp00__pointA').setAttribute('transparency', '0');
+	}
+	else
+	{
+		document.getElementById('simplelp00__lineinplane').setAttribute('transparency', '1');
+		document.getElementById('simplelp00__lineoutplane').setAttribute('transparency', '1');
+		document.getElementById('simplelp00__lineinterplane').setAttribute('transparency', '1');
+		document.getElementById('simplelp00__pointA').setAttribute('transparency', '1');
+	}
+}
+function setang1()
+{
+	if(document.getElementById('simplelp00__pointP').getAttribute('transparency') == '1')
+	{
+		document.getElementById('simplelp00__pointP').setAttribute('transparency', '0');
+	}
+	else
+	{
+		document.getElementById('simplelp00__pointP').setAttribute('transparency', '1');
+	}
+}
+function setang2()
+{
+	if(document.getElementById('simplelp00__pointO').getAttribute('transparency') == '1')
+	{
+		document.getElementById('simplelp00__pointO').setAttribute('transparency', '0');
+		document.getElementById('simplelp00__linePO').setAttribute('transparency', '0');
+	}
+	else
+	{
+		document.getElementById('simplelp00__pointO').setAttribute('transparency', '1');
+		document.getElementById('simplelp00__linePO').setAttribute('transparency', '1');
+	}
+}
+function setang3()
+{
+	if(document.getElementById('simplelp00__lineOA').getAttribute('transparency') == '1')
+	{
+		document.getElementById('simplelp00__lineOA').setAttribute('transparency', '0');
+	}
+	else
+	{
+		document.getElementById('simplelp00__lineOA').setAttribute('transparency', '1');
+	}
+}
+function setang4()
+{
+	if(document.getElementById('simplelp00__anglePAO').getAttribute('transparency') == '1')
+	{
+		document.getElementById('simplelp00__anglePAO').setAttribute('transparency', '0');
+	}
+	else
+	{
+		document.getElementById('simplelp00__anglePAO').setAttribute('transparency', '1');
+	}
+}
+function restart()
+{
+	document.getElementById('simplelp00__lineinplane').setAttribute('transparency', '1');
+	document.getElementById('simplelp00__lineoutplane').setAttribute('transparency', '1');
+	document.getElementById('simplelp00__lineinterplane').setAttribute('transparency', '1');
+	document.getElementById('simplelp00__pointA').setAttribute('transparency', '1');
+	document.getElementById('simplelp00__pointP').setAttribute('transparency', '1');
+	document.getElementById('simplelp00__pointO').setAttribute('transparency', '1');
+	document.getElementById('simplelp00__linePO').setAttribute('transparency', '1');
+	document.getElementById('simplelp00__lineOA').setAttribute('transparency', '1');
+	document.getElementById('simplelp00__anglePAO').setAttribute('transparency', '1');
+}
+</script>
+</head>
+
+
+
+	<body>
+
+		<div class="reveal">
+			<div class="slides">
+				<section>
+				<h2 >直线与平面所成的角</h2>
+				<h5 >柯飞燕老师</h5>
+				<h5 >华南师大中山附中</h5>
+				</section>
+				
+				<section>
+				<div align="center">
+					<h3>比萨斜塔的倾斜度如何刻画?</h3>
+					<iframe img width="650" height="600" src="./data/bs.png"></iframe>
+				</div>
+				</section>
+				
+				<section>
+					<h3 >直线与平面的关系，从定性到定量</h3>
+					<div align="center">
+					<table border="0">
+					<td>
+					    <x3d id = "simplelp00" width='500px' height='500px', margin-left='300px'> 
+					      <scene>
+						<inline url="./data/simplelp00.x3d" nameSpaceName="simplelp00" mapDEFToID="true" onclick=''/>
+					      </scene> 
+					    </x3d> 
+					</td>
+					</table>
+					</div>
+					<div align="center">
+					<button onclick="settransparency1();" style="color:FireBrick">重合</button>
+					<button onclick="settransparency2();" style="color:FireBrick">平行</button>
+					<button onclick="settransparency3();" style="color:FireBrick">相交</button>
+					<button onclick="setang1();" style="color:FireBrick">取点</button>
+					<button onclick="setang2();" style="color:FireBrick">垂线</button>
+					<button onclick="setang3();" style="color:FireBrick">连线</button>
+					<button onclick="setang4();" style="color:FireBrick">找角</button>
+					<button onclick="restart();" style="color:FireBrick">重置</button>
+					</div>
+				</section>
+
+				<section style="text-align: left;" data-transition="convex-in fade-out">
+					<h3 > (1)斜线，斜足的概念:</h3>
+					<p class="fragment"> 如图，直线$PA$和平面$\alpha$相交但不垂直，
+					$PA$叫做平面$\alpha$的<span class="fragment highlight-blue">斜线</span>，
+					$PA$和平面$\alpha$的交点$A$叫<span class="fragment highlight-blue">斜足</span>。</p>
+					<h3 class="fragment"> (2)射影的概念：</h3>
+					<h5 class="fragment">$PO \perp \alpha$，$AO$叫做斜线$PA$在平面$\alpha$
+					上的<span class="fragment highlight-blue">射影</span>。</h5>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<iframe  img width="500" height="500" src="./data/1.png"></iframe>
+				</section>
+				<section style="text-align: left;" data-transition="convex-in fade-out">
+					<h3> (3)斜线与平面所成的角</h3>
+					<h5> 平面的一条<span class="fragment highlight-blue">斜线</span>
+					和它在平面上的射影所成的<span class="fragment highlight-green">锐角</span>，
+					叫<span class="fragment highlight-red">这条直线和平面所成的角</span>.</h5>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<iframe img width="500" height="500" src="./data/1.png"></iframe>
+				</section>
+				
+				
+				<section style="text-align: left;" data-transition="convex-in fade-out">
+					<p>已知PA⊥平面ABCD，四边形ABCD为正方形，PA=AB.</p>
+					<p>1)指出图中有哪些三角形是直角三角形；</p>
+					<p>2)求PC在平面ABCD、平面PAD和平面PAB上的射影；</p>
+					<p>3)求PC与平面ABCD、平面PAD和平面PAB所成角的正切值。</p>
+						<div align="center">
+						<table border="0">
+						<td>
+						    <x3d  width='320px' height='320px', margin-left='300px'> 
+						      <scene>
+							<inline url="./data/simplelp.x3d" nameSpaceName="Dice" mapDEFToID="true" onclick=''/>
+						      </scene> 
+						    </x3d> 
+						</td>
+						</table>
+						</div>
+				</section>
+				
+				<section style="text-align: left;" data-transition="convex-in fade-out">
+					<p>解：</p>
+					<p class="fragment">1) Rt$\Delta PAB$、Rt$\Delta PBC$、Rt$\Delta PCD$、Rt$\Delta PDA$</p>
+					<p class="fragment">2) $AC$、$PD$、$PB$</p>
+					<p class="fragment">3) $PC$与平面$ABCD$: $\tan\angle PCA=\dfrac{PA}{AC}=\dfrac{\sqrt{2}}{2}$</p>
+					<p class="fragment"> &nbsp;&nbsp;$PC$与平面$PAD$: $\tan\angle CPD=\dfrac{CD}{PD}=\dfrac{\sqrt{2}}{2}$</p>
+					<p class="fragment"> &nbsp;&nbsp;$PC$与平面$PAB$: $\tan\angle CPB=\dfrac{BC}{PB}=\dfrac{\sqrt{2}}{2}$</p>
+				</section>
+				
+
+				<section style="text-align: left;" data-transition="convex-in fade-out">
+					<h5>如图，在正方体ABCD-A'B'C'D'中，求直线A'B和平面A'B'CD所成的角</h5>
+					<div align="center">
+					<table border="0">
+					<td>
+					    <x3d id = "simplelp22" width='500px' height='500px', margin-left='300px'> 
+					      <scene>
+						<inline url="./data/simplelp2.x3d" nameSpaceName="simplelp22" mapDEFToID="true" onclick=''/>
+					      </scene> 
+					    </x3d> 
+					</td>
+					</table>
+					</div>
+					<div align="center">
+					<button onclick="setCube();" style="color:FireBrick">显示或隐藏辅助线</button>
+					</div>
+				</section>
+
+				<section style="text-align: left;" data-transition="convex-in fade-out">
+					<h3> 总结</h3>
+					<h5 class="fragment"> 直线与平面所成角的求法:（当直线与平面斜交时）</h5>
+					<h5 class="fragment"> 1. <span style="color:FireBrick"> 作 </span>------作出或找到斜线与射影所成的角;</h5>
+					<h5 class="fragment"> &nbsp;&nbsp;&nbsp;&nbsp; 过斜线上一点作平面的垂线，再连结垂足和斜足。</h5>
+					<h5 class="fragment"> 2.<span style="color:FireBrick"> 证 </span>------论证所作或找到的角为所求的角；</h5>
+					<h5 class="fragment"> 3.<span style="color:FireBrick"> 求 </span>------常用解直三角形的方法求角；</h5>
+				</section>
+
+				<section>
+					<h1> Thank you</h1>
+				</section>
+			</div>
+
+		</div>
+
+			<script src="../htmlppt/lib/js/head.min.js"></script>
+			<script src="../htmlppt/js/reveal.js"></script>
+
+			<script>
+
+				Reveal.initialize({
+					history: true,
+					transition: 'linear',
+
+					math: {
+						// mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+						config: 'TeX-AMS_HTML-full'
+					},
+
+					dependencies: [
+						{ src: '../htmlppt/lib/js/classList.js' },
+						{ src: '../htmlppt/plugin/math/math.js', async: true }
+					]
+				});
+
+			</script>
+		</div>
+	</body>
+</html>
