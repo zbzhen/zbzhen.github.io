@@ -4,28 +4,211 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>作图</title>
+  <title>直线与平面的所成角</title>
   <link rel="stylesheet" href="https://stackedit.io/style.css" />
 <script type='text/javascript' src='x3dom/x3dom.js'> </script> 
 <link rel='stylesheet' type='text/css' href='x3dom/x3dom.css'></link> 
+<script>
+  function setCube()
+  {
+  if(document.getElementById('simplelp22__line1').getAttribute('transparency')!= '1')
+     document.getElementById('simplelp22__line1').setAttribute('transparency', '1');
+  else 
+     document.getElementById('simplelp22__line1').setAttribute('transparency', '0.5'); 
+  if(document.getElementById('simplelp22__line2').getAttribute('transparency')!= '1')
+     document.getElementById('simplelp22__line2').setAttribute('transparency', '1');
+  else 
+     document.getElementById('simplelp22__line2').setAttribute('transparency', '0.5'); 
+  }
+</script>
+<script>
+function settransparency1()
+{
+	if(document.getElementById('simplelp00__lineinplane').getAttribute('transparency') == '1')
+	{
+		document.getElementById('simplelp00__lineinplane').setAttribute('transparency', '0');
+		document.getElementById('simplelp00__lineoutplane').setAttribute('transparency', '1');
+		document.getElementById('simplelp00__lineinterplane').setAttribute('transparency', '1');
+		document.getElementById('simplelp00__pointA').setAttribute('transparency', '1');
+	}
+	else
+	{
+		document.getElementById('simplelp00__lineinplane').setAttribute('transparency', '1');
+		document.getElementById('simplelp00__lineoutplane').setAttribute('transparency', '1');
+		document.getElementById('simplelp00__lineinterplane').setAttribute('transparency', '1');
+		document.getElementById('simplelp00__pointA').setAttribute('transparency', '1');
+	}
+}
+function settransparency2()
+{
+	if(document.getElementById('simplelp00__lineoutplane').getAttribute('transparency') == '1')
+	{
+		document.getElementById('simplelp00__lineinplane').setAttribute('transparency', '1');
+		document.getElementById('simplelp00__lineoutplane').setAttribute('transparency', '0');
+		document.getElementById('simplelp00__lineinterplane').setAttribute('transparency', '1');
+		document.getElementById('simplelp00__pointA').setAttribute('transparency', '1');
+	}
+	else
+	{
+		document.getElementById('simplelp00__lineinplane').setAttribute('transparency', '1');
+		document.getElementById('simplelp00__lineoutplane').setAttribute('transparency', '1');
+		document.getElementById('simplelp00__lineinterplane').setAttribute('transparency', '1');
+		ocument.getElementById('simplelp00__pointA').setAttribute('transparency', '1');
+	}
+}
+function settransparency3()
+{
+	if(document.getElementById('simplelp00__lineinterplane').getAttribute('transparency') == '1')
+	{
+		document.getElementById('simplelp00__lineinplane').setAttribute('transparency', '1');
+		document.getElementById('simplelp00__lineoutplane').setAttribute('transparency', '1');
+		document.getElementById('simplelp00__lineinterplane').setAttribute('transparency', '0');
+		document.getElementById('simplelp00__pointA').setAttribute('transparency', '0');
+	}
+	else
+	{
+		document.getElementById('simplelp00__lineinplane').setAttribute('transparency', '1');
+		document.getElementById('simplelp00__lineoutplane').setAttribute('transparency', '1');
+		document.getElementById('simplelp00__lineinterplane').setAttribute('transparency', '1');
+		document.getElementById('simplelp00__pointA').setAttribute('transparency', '1');
+	}
+}
+function setang1()
+{
+	if(document.getElementById('simplelp00__pointP').getAttribute('transparency') == '1')
+	{
+		document.getElementById('simplelp00__pointP').setAttribute('transparency', '0');
+	}
+	else
+	{
+		document.getElementById('simplelp00__pointP').setAttribute('transparency', '1');
+	}
+}
+function setang2()
+{
+	if(document.getElementById('simplelp00__pointO').getAttribute('transparency') == '1')
+	{
+		document.getElementById('simplelp00__pointO').setAttribute('transparency', '0');
+		document.getElementById('simplelp00__linePO').setAttribute('transparency', '0');
+	}
+	else
+	{
+		document.getElementById('simplelp00__pointO').setAttribute('transparency', '1');
+		document.getElementById('simplelp00__linePO').setAttribute('transparency', '1');
+	}
+}
+function setang3()
+{
+	if(document.getElementById('simplelp00__lineOA').getAttribute('transparency') == '1')
+	{
+		document.getElementById('simplelp00__lineOA').setAttribute('transparency', '0');
+	}
+	else
+	{
+		document.getElementById('simplelp00__lineOA').setAttribute('transparency', '1');
+	}
+}
+function setang4()
+{
+	if(document.getElementById('simplelp00__anglePAO').getAttribute('transparency') == '1')
+	{
+		document.getElementById('simplelp00__anglePAO').setAttribute('transparency', '0');
+	}
+	else
+	{
+		document.getElementById('simplelp00__anglePAO').setAttribute('transparency', '1');
+	}
+}
+function restart()
+{
+	document.getElementById('simplelp00__lineinplane').setAttribute('transparency', '1');
+	document.getElementById('simplelp00__lineoutplane').setAttribute('transparency', '1');
+	document.getElementById('simplelp00__lineinterplane').setAttribute('transparency', '1');
+	document.getElementById('simplelp00__pointA').setAttribute('transparency', '1');
+	document.getElementById('simplelp00__pointP').setAttribute('transparency', '1');
+	document.getElementById('simplelp00__pointO').setAttribute('transparency', '1');
+	document.getElementById('simplelp00__linePO').setAttribute('transparency', '1');
+	document.getElementById('simplelp00__lineOA').setAttribute('transparency', '1');
+	document.getElementById('simplelp00__anglePAO').setAttribute('transparency', '1');
+}
+</script>
 </head>
+
+
+<body class="stackedit">
+<div class="stackedit__html" align="center"><h1 >直线与平面的关系，从定性到定量</h1>
+	<div align="center">
+	<table border="0">
+	<td>
+	    <x3d id = "simplelp00" width='500px' height='500px', margin-left='300px'> 
+	      <scene>
+		<inline url="./data/simplelp00.x3d" nameSpaceName="simplelp00" mapDEFToID="true" onclick=''/>
+	      </scene> 
+	    </x3d> 
+	</td>
+	</table>
+	</div>
+	<div align="center">
+	<button onclick="settransparency1();" style="color:FireBrick">重合</button>
+	<button onclick="settransparency2();" style="color:FireBrick">平行</button>
+	<button onclick="settransparency3();" style="color:FireBrick">相交</button>
+	<button onclick="setang1();" style="color:FireBrick">取点</button>
+	<button onclick="setang2();" style="color:FireBrick">垂线</button>
+	<button onclick="setang3();" style="color:FireBrick">连线</button>
+	<button onclick="setang4();" style="color:FireBrick">找角</button>
+	华南师大中山附中柯老师提供(仅供学习) 
+	<button onclick="restart();" style="color:FireBrick">重置</button>
+	</div>
+</div>
+</body>
+
+
 
 <body class="stackedit">
   <div class="stackedit__html"><h2 id="已知pa⊥平面abcd，四边形abcd为正方形，paab.">已知PA⊥平面ABCD，四边形ABCD为正方形，PA=AB.</h2>
-<h2 id="求pc和平面abcd所成角">(1)求PC和平面ABCD所成角</h2>
-<h2 id="求pc和平面pad所成角">(2)求PC和平面PAD所成角</h2>
-<h2 id="求pc和平面pab所成角">(3)求PC和平面PAB所成角</h2>
-<div align="center">
-<table border="0">
-<td>
-    <x3d width='300px' height='300px', margin-left='300px'> 
-      <scene> 
-        <inline url="./data/simplelp.x3d" nameSpaceName="Dice" mapDEFToID="true" onclick=''/>
-      </scene> 
-    </x3d> 
-</td>
-</table>
+<h2>（1）指出图中有哪些三角形是直角三角形，并说明理由；</h2>
+<h2>（2）分别指出PC在平面ABCD、平面PAD和平面PAB上的射影；</h2>
+<h2>（3）分别求出PC与平面ABCD、平面PAD和平面PAB所成角的正切值。</h2>
+	<div align="center">
+	<table border="0">
+	<td>
+	    <x3d  width='300px' height='300px', margin-left='300px'> 
+	      <scene>
+		<inline url="./data/simplelp.x3d" nameSpaceName="Dice" mapDEFToID="true" onclick=''/>
+	      </scene> 
+	    </x3d> 
+	</td>
+	</table>
+	</div>
+	<div align="center">华南师大中山附中柯老师提供(仅供学习)</div>
+	
 </div>
+</body>
+
+
+
+
+
+
+<body class="stackedit">
+<div class="stackedit__html"><h1 id="如图，在正方体ABCD-A'B'C'D'中，求直线A'B和平面A'B'CD所成的角，paab.">如图，在正方体ABCD-A'B'C'D'中，求直线A'B和平面A'B'CD所成的角</h1>
+	<div align="center">
+	<table border="0">
+	<td>
+	    <x3d id = "simplelp22" width='500px' height='500px', margin-left='300px'> 
+	      <scene>
+		<inline url="./data/simplelp2.x3d" nameSpaceName="simplelp22" mapDEFToID="true" onclick=''/>
+	      </scene> 
+	    </x3d> 
+	</td>
+	</table>
+	</div>
+	<div align="center">
+	<button onclick="setCube();" style="color:FireBrick">显示或隐藏辅助线</button>
+	华南师大中山附中柯老师提供(仅供学习) 
+	</div>
 </div>
-  </body>
+</body>
+
+
 </html>

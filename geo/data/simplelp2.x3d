@@ -1,0 +1,916 @@
+<?xml version="1.0" encoding ="UTF-8"?>
+
+<X3D profile="Immersive" version="3.0">
+  <head>
+    <meta name="filename" content="simplelp2.x3d"/>
+    <meta name="generator" content="Visualization ToolKit X3D exporter v0.9.1"/>
+    <meta name="numberofelements" content="16"/>
+  </head>
+  <Scene>
+    <Background skyColor="1 1 1"/>
+    <Viewpoint fieldOfView="0.523599" position="2.45117 2.45117 2.45117" description="Default View" orientation="0.187053 0.451587 0.872399 -3.83511" centerOfRotation="0.5 0.5 0.5"/>
+    <NavigationInfo type='"EXAMINE" "FLY" "ANY"' speed="4" headlight="true"/>
+    <DirectionalLight ambientIntensity="1" intensity="0" color="1 1 1"/>
+    <Transform DEF="ROOT" translation="0 0 0">
+      <DirectionalLight direction="-0.5 -0.707107 -0.5" color="1 1 1" intensity="1" on="true"/>
+      <DirectionalLight direction="0.75 0.5 -0.433013" color="1 1 1" intensity="0.6" on="true"/>
+      <DirectionalLight direction="-0.75 0.5 -0.433013" color="1 1 1" intensity="0.5" on="true"/>
+      <DirectionalLight direction="0 0 -1" color="1 1 1" intensity="1" on="false"/>
+      <Transform translation="0 0 0" rotation="0 0 1 -0" scale="1 1 1">
+        <Shape>
+          <Appearance>
+            <Material ambientIntensity="0" emissiveColor="0 0 0" diffuseColor="0 0 1" specularColor="0 0 0" shininess="0.0078125" transparency="0.2"/>
+          </Appearance>
+          <IndexedFaceSet solid="false" colorPerVertex="true" normalPerVertex="true" coordIndex="
+            0 2 3 -1 
+            3 1 0 -1 
+            ">
+            <Coordinate DEF="VTKcoordinates0000" point="
+              0 0 1,
+              0 1 0,
+              1 0 1,
+              1 1 0,
+              "/>
+            <Normal DEF="VTKnormals0000" vector="
+              0 0.707107 0.707107,
+              0 0.707107 0.707107,
+              0 0.707107 0.707107,
+              0 0.707107 0.707107,
+              "/>
+            <Color DEF="VTKcolors0000" color="
+              0.498039 0.788235 0.498039,
+              0.498039 0.788235 0.498039,
+              0.498039 0.788235 0.498039,
+              0.498039 0.788235 0.498039,
+              "/>
+          </IndexedFaceSet>
+        </Shape>
+      </Transform>
+      <Transform translation="0 0 0" rotation="0 0 1 -0" scale="1 1 1">
+        <Shape>
+          <Appearance>
+            <Material ambientIntensity="0" emissiveColor="0 0 0" diffuseColor="0 0 1" specularColor="0 0 0" shininess="0.0078125" transparency="0"/>
+          </Appearance>
+          <IndexedFaceSet solid="false" colorPerVertex="false" normalPerVertex="true" coordIndex="
+            1 0 7 -1 
+            7 0 6 -1 
+            2 1 8 -1 
+            8 1 7 -1 
+            3 2 9 -1 
+            9 2 8 -1 
+            4 3 10 -1 
+            10 3 9 -1 
+            5 4 11 -1 
+            11 4 10 -1 
+            0 5 6 -1 
+            6 5 11 -1 
+            ">
+            <Coordinate DEF="VTKcoordinates0001" point="
+              0.00353553 0 1.00354,
+              0.00176777 0.00433013 1.00177,
+              -0.00176777 0.00433013 0.998232,
+              -0.00353553 6.12323e-019 0.996464,
+              -0.00176777 -0.00433013 0.998232,
+              0.00176777 -0.00433013 1.00177,
+              1.00354 0 0.00353553,
+              1.00177 0.00433013 0.00176777,
+              0.998232 0.00433013 -0.00176777,
+              0.996464 6.12323e-019 -0.00353553,
+              0.998232 -0.00433013 -0.00176777,
+              1.00177 -0.00433013 0.00176777,
+              "/>
+            <Normal DEF="VTKnormals0001" vector="
+              0.707107 0 0.707107,
+              0.353553 0.866025 0.353553,
+              -0.353553 0.866025 -0.353553,
+              -0.707107 1.22465e-016 -0.707107,
+              -0.353553 -0.866025 -0.353553,
+              0.353553 -0.866025 0.353553,
+              0.707107 0 0.707107,
+              0.353553 0.866025 0.353553,
+              -0.353553 0.866025 -0.353553,
+              -0.707107 1.22465e-016 -0.707107,
+              -0.353553 -0.866025 -0.353553,
+              0.353553 -0.866025 0.353553,
+              "/>
+          </IndexedFaceSet>
+        </Shape>
+      </Transform>
+      <Transform translation="0 0 0" rotation="0 0 1 -0" scale="1 1 1">
+        <Shape>
+          <Appearance>
+            <Material ambientIntensity="0" emissiveColor="0 0 0" diffuseColor="0.2 0.2 0.2" specularColor="0 0 0" shininess="0.0078125" transparency="0"/>
+          </Appearance>
+          <IndexedFaceSet solid="false" colorPerVertex="false" normalPerVertex="true" coordIndex="
+            1 0 7 -1 
+            7 0 6 -1 
+            2 1 8 -1 
+            8 1 7 -1 
+            3 2 9 -1 
+            9 2 8 -1 
+            4 3 10 -1 
+            10 3 9 -1 
+            5 4 11 -1 
+            11 4 10 -1 
+            0 5 6 -1 
+            6 5 11 -1 
+            ">
+            <Coordinate DEF="VTKcoordinates0002" point="
+              0 0 0.005,
+              0 0.00433013 0.0025,
+              0 0.00433013 -0.0025,
+              0 6.12323e-019 -0.005,
+              0 -0.00433013 -0.0025,
+              0 -0.00433013 0.0025,
+              1 0 0.005,
+              1 0.00433013 0.0025,
+              1 0.00433013 -0.0025,
+              1 6.12323e-019 -0.005,
+              1 -0.00433013 -0.0025,
+              1 -0.00433013 0.0025,
+              "/>
+            <Normal DEF="VTKnormals0002" vector="
+              0 0 1,
+              0 0.866025 0.5,
+              -0 0.866025 -0.5,
+              -0 1.22465e-016 -1,
+              0 -0.866025 -0.5,
+              0 -0.866025 0.5,
+              0 0 1,
+              0 0.866025 0.5,
+              -0 0.866025 -0.5,
+              -0 1.22465e-016 -1,
+              0 -0.866025 -0.5,
+              0 -0.866025 0.5,
+              "/>
+          </IndexedFaceSet>
+        </Shape>
+      </Transform>
+      <Transform translation="0 0 0" rotation="0 0 1 -0" scale="1 1 1">
+        <Shape>
+          <Appearance>
+            <Material ambientIntensity="0" emissiveColor="0 0 0" diffuseColor="0.2 0.2 0.2" specularColor="0 0 0" shininess="0.0078125" transparency="0"/>
+          </Appearance>
+          <IndexedFaceSet solid="false" colorPerVertex="false" normalPerVertex="true" coordIndex="
+            1 0 7 -1 
+            7 0 6 -1 
+            2 1 8 -1 
+            8 1 7 -1 
+            3 2 9 -1 
+            9 2 8 -1 
+            4 3 10 -1 
+            10 3 9 -1 
+            5 4 11 -1 
+            11 4 10 -1 
+            0 5 6 -1 
+            6 5 11 -1 
+            ">
+            <Coordinate DEF="VTKcoordinates0003" point="
+              0.995 1 0,
+              0.9975 1 0.00433013,
+              1.0025 1 0.00433013,
+              1.005 1 6.12323e-019,
+              1.0025 1 -0.00433013,
+              0.9975 1 -0.00433013,
+              0.995 0 0,
+              0.9975 0 0.00433013,
+              1.0025 0 0.00433013,
+              1.005 0 6.12323e-019,
+              1.0025 0 -0.00433013,
+              0.9975 0 -0.00433013,
+              "/>
+            <Normal DEF="VTKnormals0003" vector="
+              -1 0 0,
+              -0.5 0 0.866025,
+              0.5 0 0.866025,
+              1 0 1.22465e-016,
+              0.5 -0 -0.866025,
+              -0.5 0 -0.866025,
+              -1 0 0,
+              -0.5 0 0.866025,
+              0.5 0 0.866025,
+              1 0 1.22465e-016,
+              0.5 -0 -0.866025,
+              -0.5 0 -0.866025,
+              "/>
+          </IndexedFaceSet>
+        </Shape>
+      </Transform>
+      <Transform translation="0 0 0" rotation="0 0 1 -0" scale="1 1 1">
+        <Shape>
+          <Appearance>
+            <Material ambientIntensity="0" emissiveColor="0 0 0" diffuseColor="0.2 0.2 0.2" specularColor="0 0 0" shininess="0.0078125" transparency="0"/>
+          </Appearance>
+          <IndexedFaceSet solid="false" colorPerVertex="false" normalPerVertex="true" coordIndex="
+            1 0 7 -1 
+            7 0 6 -1 
+            2 1 8 -1 
+            8 1 7 -1 
+            3 2 9 -1 
+            9 2 8 -1 
+            4 3 10 -1 
+            10 3 9 -1 
+            5 4 11 -1 
+            11 4 10 -1 
+            0 5 6 -1 
+            6 5 11 -1 
+            ">
+            <Coordinate DEF="VTKcoordinates0004" point="
+              1 1 -0.005,
+              1 1.00433 -0.0025,
+              1 1.00433 0.0025,
+              1 1 0.005,
+              1 0.99567 0.0025,
+              1 0.99567 -0.0025,
+              0 1 -0.005,
+              0 1.00433 -0.0025,
+              0 1.00433 0.0025,
+              0 1 0.005,
+              0 0.99567 0.0025,
+              0 0.99567 -0.0025,
+              "/>
+            <Normal DEF="VTKnormals0004" vector="
+              0 0 -1,
+              0 0.866025 -0.5,
+              0 0.866025 0.5,
+              0 1.22465e-016 1,
+              -0 -0.866025 0.5,
+              0 -0.866025 -0.5,
+              0 0 -1,
+              0 0.866025 -0.5,
+              0 0.866025 0.5,
+              0 1.22465e-016 1,
+              -0 -0.866025 0.5,
+              0 -0.866025 -0.5,
+              "/>
+          </IndexedFaceSet>
+        </Shape>
+      </Transform>
+      <Transform translation="0 0 0" rotation="0 0 1 -0" scale="1 1 1">
+        <Shape>
+          <Appearance>
+            <Material ambientIntensity="0" emissiveColor="0 0 0" diffuseColor="0.2 0.2 0.2" specularColor="0 0 0" shininess="0.0078125" transparency="0"/>
+          </Appearance>
+          <IndexedFaceSet solid="false" colorPerVertex="false" normalPerVertex="true" coordIndex="
+            1 0 7 -1 
+            7 0 6 -1 
+            2 1 8 -1 
+            8 1 7 -1 
+            3 2 9 -1 
+            9 2 8 -1 
+            4 3 10 -1 
+            10 3 9 -1 
+            5 4 11 -1 
+            11 4 10 -1 
+            0 5 6 -1 
+            6 5 11 -1 
+            ">
+            <Coordinate DEF="VTKcoordinates0005" point="
+              0.005 0 0,
+              0.0025 0 0.00433013,
+              -0.0025 0 0.00433013,
+              -0.005 0 6.12323e-019,
+              -0.0025 0 -0.00433013,
+              0.0025 0 -0.00433013,
+              0.005 1 0,
+              0.0025 1 0.00433013,
+              -0.0025 1 0.00433013,
+              -0.005 1 6.12323e-019,
+              -0.0025 1 -0.00433013,
+              0.0025 1 -0.00433013,
+              "/>
+            <Normal DEF="VTKnormals0005" vector="
+              1 0 0,
+              0.5 0 0.866025,
+              -0.5 -0 0.866025,
+              -1 -0 1.22465e-016,
+              -0.5 0 -0.866025,
+              0.5 0 -0.866025,
+              1 0 0,
+              0.5 0 0.866025,
+              -0.5 -0 0.866025,
+              -1 -0 1.22465e-016,
+              -0.5 0 -0.866025,
+              0.5 0 -0.866025,
+              "/>
+          </IndexedFaceSet>
+        </Shape>
+      </Transform>
+      <Transform translation="0 0 0" rotation="0 0 1 -0" scale="1 1 1">
+        <Shape>
+          <Appearance>
+            <Material ambientIntensity="0" emissiveColor="0 0 0" diffuseColor="0.2 0.2 0.2" specularColor="0 0 0" shininess="0.0078125" transparency="0"/>
+          </Appearance>
+          <IndexedFaceSet solid="false" colorPerVertex="false" normalPerVertex="true" coordIndex="
+            1 0 7 -1 
+            7 0 6 -1 
+            2 1 8 -1 
+            8 1 7 -1 
+            3 2 9 -1 
+            9 2 8 -1 
+            4 3 10 -1 
+            10 3 9 -1 
+            5 4 11 -1 
+            11 4 10 -1 
+            0 5 6 -1 
+            6 5 11 -1 
+            ">
+            <Coordinate DEF="VTKcoordinates0006" point="
+              0 0.005 0,
+              0.00433013 0.0025 0,
+              0.00433013 -0.0025 0,
+              6.12323e-019 -0.005 0,
+              -0.00433013 -0.0025 0,
+              -0.00433013 0.0025 0,
+              0 0.005 1,
+              0.00433013 0.0025 1,
+              0.00433013 -0.0025 1,
+              6.12323e-019 -0.005 1,
+              -0.00433013 -0.0025 1,
+              -0.00433013 0.0025 1,
+              "/>
+            <Normal DEF="VTKnormals0006" vector="
+              0 1 0,
+              0.866025 0.5 0,
+              0.866025 -0.5 -0,
+              1.22465e-016 -1 -0,
+              -0.866025 -0.5 0,
+              -0.866025 0.5 0,
+              0 1 0,
+              0.866025 0.5 0,
+              0.866025 -0.5 -0,
+              1.22465e-016 -1 -0,
+              -0.866025 -0.5 0,
+              -0.866025 0.5 0,
+              "/>
+          </IndexedFaceSet>
+        </Shape>
+      </Transform>
+      <Transform translation="0 0 0" rotation="0 0 1 -0" scale="1 1 1">
+        <Shape>
+          <Appearance>
+            <Material ambientIntensity="0" emissiveColor="0 0 0" diffuseColor="0.2 0.2 0.2" specularColor="0 0 0" shininess="0.0078125" transparency="0"/>
+          </Appearance>
+          <IndexedFaceSet solid="false" colorPerVertex="false" normalPerVertex="true" coordIndex="
+            1 0 7 -1 
+            7 0 6 -1 
+            2 1 8 -1 
+            8 1 7 -1 
+            3 2 9 -1 
+            9 2 8 -1 
+            4 3 10 -1 
+            10 3 9 -1 
+            5 4 11 -1 
+            11 4 10 -1 
+            0 5 6 -1 
+            6 5 11 -1 
+            ">
+            <Coordinate DEF="VTKcoordinates0007" point="
+              1 1.005 0,
+              1.00433 1.0025 0,
+              1.00433 0.9975 0,
+              1 0.995 0,
+              0.99567 0.9975 0,
+              0.99567 1.0025 0,
+              1 1.005 1,
+              1.00433 1.0025 1,
+              1.00433 0.9975 1,
+              1 0.995 1,
+              0.99567 0.9975 1,
+              0.99567 1.0025 1,
+              "/>
+            <Normal DEF="VTKnormals0007" vector="
+              0 1 0,
+              0.866025 0.5 0,
+              0.866025 -0.5 -0,
+              1.22465e-016 -1 -0,
+              -0.866025 -0.5 0,
+              -0.866025 0.5 0,
+              0 1 0,
+              0.866025 0.5 0,
+              0.866025 -0.5 -0,
+              1.22465e-016 -1 -0,
+              -0.866025 -0.5 0,
+              -0.866025 0.5 0,
+              "/>
+          </IndexedFaceSet>
+        </Shape>
+      </Transform>
+      <Transform translation="0 0 0" rotation="0 0 1 -0" scale="1 1 1">
+        <Shape>
+          <Appearance>
+            <Material ambientIntensity="0" emissiveColor="0 0 0" diffuseColor="0.2 0.2 0.2" specularColor="0 0 0" shininess="0.0078125" transparency="0"/>
+          </Appearance>
+          <IndexedFaceSet solid="false" colorPerVertex="false" normalPerVertex="true" coordIndex="
+            1 0 7 -1 
+            7 0 6 -1 
+            2 1 8 -1 
+            8 1 7 -1 
+            3 2 9 -1 
+            9 2 8 -1 
+            4 3 10 -1 
+            10 3 9 -1 
+            5 4 11 -1 
+            11 4 10 -1 
+            0 5 6 -1 
+            6 5 11 -1 
+            ">
+            <Coordinate DEF="VTKcoordinates0008" point="
+              0 0.995 1,
+              0.00433013 0.9975 1,
+              0.00433013 1.0025 1,
+              6.12323e-019 1.005 1,
+              -0.00433013 1.0025 1,
+              -0.00433013 0.9975 1,
+              0 0.995 0,
+              0.00433013 0.9975 0,
+              0.00433013 1.0025 0,
+              6.12323e-019 1.005 0,
+              -0.00433013 1.0025 0,
+              -0.00433013 0.9975 0,
+              "/>
+            <Normal DEF="VTKnormals0008" vector="
+              0 -1 0,
+              0.866025 -0.5 0,
+              0.866025 0.5 0,
+              1.22465e-016 1 0,
+              -0.866025 0.5 -0,
+              -0.866025 -0.5 0,
+              0 -1 0,
+              0.866025 -0.5 0,
+              0.866025 0.5 0,
+              1.22465e-016 1 0,
+              -0.866025 0.5 -0,
+              -0.866025 -0.5 0,
+              "/>
+          </IndexedFaceSet>
+        </Shape>
+      </Transform>
+      <Transform translation="0 0 0" rotation="0 0 1 -0" scale="1 1 1">
+        <Shape>
+          <Appearance>
+            <Material ambientIntensity="0" emissiveColor="0 0 0" diffuseColor="0.2 0.2 0.2" specularColor="0 0 0" shininess="0.0078125" transparency="0"/>
+          </Appearance>
+          <IndexedFaceSet solid="false" colorPerVertex="false" normalPerVertex="true" coordIndex="
+            1 0 7 -1 
+            7 0 6 -1 
+            2 1 8 -1 
+            8 1 7 -1 
+            3 2 9 -1 
+            9 2 8 -1 
+            4 3 10 -1 
+            10 3 9 -1 
+            5 4 11 -1 
+            11 4 10 -1 
+            0 5 6 -1 
+            6 5 11 -1 
+            ">
+            <Coordinate DEF="VTKcoordinates0009" point="
+              1 0.005 0,
+              1.00433 0.0025 0,
+              1.00433 -0.0025 0,
+              1 -0.005 0,
+              0.99567 -0.0025 0,
+              0.99567 0.0025 0,
+              1 0.005 1,
+              1.00433 0.0025 1,
+              1.00433 -0.0025 1,
+              1 -0.005 1,
+              0.99567 -0.0025 1,
+              0.99567 0.0025 1,
+              "/>
+            <Normal DEF="VTKnormals0009" vector="
+              0 1 0,
+              0.866025 0.5 0,
+              0.866025 -0.5 -0,
+              1.22465e-016 -1 -0,
+              -0.866025 -0.5 0,
+              -0.866025 0.5 0,
+              0 1 0,
+              0.866025 0.5 0,
+              0.866025 -0.5 -0,
+              1.22465e-016 -1 -0,
+              -0.866025 -0.5 0,
+              -0.866025 0.5 0,
+              "/>
+          </IndexedFaceSet>
+        </Shape>
+      </Transform>
+      <Transform translation="0 0 0" rotation="0 0 1 -0" scale="1 1 1">
+        <Shape>
+          <Appearance>
+            <Material ambientIntensity="0" emissiveColor="0 0 0" diffuseColor="0.2 0.2 0.2" specularColor="0 0 0" shininess="0.0078125" transparency="0"/>
+          </Appearance>
+          <IndexedFaceSet solid="false" colorPerVertex="false" normalPerVertex="true" coordIndex="
+            1 0 7 -1 
+            7 0 6 -1 
+            2 1 8 -1 
+            8 1 7 -1 
+            3 2 9 -1 
+            9 2 8 -1 
+            4 3 10 -1 
+            10 3 9 -1 
+            5 4 11 -1 
+            11 4 10 -1 
+            0 5 6 -1 
+            6 5 11 -1 
+            ">
+            <Coordinate DEF="VTKcoordinates0010" point="
+              0 0 1.005,
+              0 0.00433013 1.0025,
+              0 0.00433013 0.9975,
+              0 6.12323e-019 0.995,
+              0 -0.00433013 0.9975,
+              0 -0.00433013 1.0025,
+              1 0 1.005,
+              1 0.00433013 1.0025,
+              1 0.00433013 0.9975,
+              1 6.12323e-019 0.995,
+              1 -0.00433013 0.9975,
+              1 -0.00433013 1.0025,
+              "/>
+            <Normal DEF="VTKnormals0010" vector="
+              0 0 1,
+              0 0.866025 0.5,
+              -0 0.866025 -0.5,
+              -0 1.22465e-016 -1,
+              0 -0.866025 -0.5,
+              0 -0.866025 0.5,
+              0 0 1,
+              0 0.866025 0.5,
+              -0 0.866025 -0.5,
+              -0 1.22465e-016 -1,
+              0 -0.866025 -0.5,
+              0 -0.866025 0.5,
+              "/>
+          </IndexedFaceSet>
+        </Shape>
+      </Transform>
+      <Transform translation="0 0 0" rotation="0 0 1 -0" scale="1 1 1">
+        <Shape>
+          <Appearance>
+            <Material ambientIntensity="0" emissiveColor="0 0 0" diffuseColor="0.2 0.2 0.2" specularColor="0 0 0" shininess="0.0078125" transparency="0"/>
+          </Appearance>
+          <IndexedFaceSet solid="false" colorPerVertex="false" normalPerVertex="true" coordIndex="
+            1 0 7 -1 
+            7 0 6 -1 
+            2 1 8 -1 
+            8 1 7 -1 
+            3 2 9 -1 
+            9 2 8 -1 
+            4 3 10 -1 
+            10 3 9 -1 
+            5 4 11 -1 
+            11 4 10 -1 
+            0 5 6 -1 
+            6 5 11 -1 
+            ">
+            <Coordinate DEF="VTKcoordinates0011" point="
+              0.995 1 1,
+              0.9975 1 1.00433,
+              1.0025 1 1.00433,
+              1.005 1 1,
+              1.0025 1 0.99567,
+              0.9975 1 0.99567,
+              0.995 0 1,
+              0.9975 0 1.00433,
+              1.0025 0 1.00433,
+              1.005 0 1,
+              1.0025 0 0.99567,
+              0.9975 0 0.99567,
+              "/>
+            <Normal DEF="VTKnormals0011" vector="
+              -1 0 0,
+              -0.5 0 0.866025,
+              0.5 0 0.866025,
+              1 0 1.22465e-016,
+              0.5 -0 -0.866025,
+              -0.5 0 -0.866025,
+              -1 0 0,
+              -0.5 0 0.866025,
+              0.5 0 0.866025,
+              1 0 1.22465e-016,
+              0.5 -0 -0.866025,
+              -0.5 0 -0.866025,
+              "/>
+          </IndexedFaceSet>
+        </Shape>
+      </Transform>
+      <Transform translation="0 0 0" rotation="0 0 1 -0" scale="1 1 1">
+        <Shape>
+          <Appearance>
+            <Material ambientIntensity="0" emissiveColor="0 0 0" diffuseColor="0.2 0.2 0.2" specularColor="0 0 0" shininess="0.0078125" transparency="0"/>
+          </Appearance>
+          <IndexedFaceSet solid="false" colorPerVertex="false" normalPerVertex="true" coordIndex="
+            1 0 7 -1 
+            7 0 6 -1 
+            2 1 8 -1 
+            8 1 7 -1 
+            3 2 9 -1 
+            9 2 8 -1 
+            4 3 10 -1 
+            10 3 9 -1 
+            5 4 11 -1 
+            11 4 10 -1 
+            0 5 6 -1 
+            6 5 11 -1 
+            ">
+            <Coordinate DEF="VTKcoordinates0012" point="
+              1 1 0.995,
+              1 1.00433 0.9975,
+              1 1.00433 1.0025,
+              1 1 1.005,
+              1 0.99567 1.0025,
+              1 0.99567 0.9975,
+              0 1 0.995,
+              0 1.00433 0.9975,
+              0 1.00433 1.0025,
+              0 1 1.005,
+              0 0.99567 1.0025,
+              0 0.99567 0.9975,
+              "/>
+            <Normal DEF="VTKnormals0012" vector="
+              0 0 -1,
+              0 0.866025 -0.5,
+              0 0.866025 0.5,
+              0 1.22465e-016 1,
+              -0 -0.866025 0.5,
+              0 -0.866025 -0.5,
+              0 0 -1,
+              0 0.866025 -0.5,
+              0 0.866025 0.5,
+              0 1.22465e-016 1,
+              -0 -0.866025 0.5,
+              0 -0.866025 -0.5,
+              "/>
+          </IndexedFaceSet>
+        </Shape>
+      </Transform>
+      <Transform translation="0 0 0" rotation="0 0 1 -0" scale="1 1 1">
+        <Shape>
+          <Appearance>
+            <Material ambientIntensity="0" emissiveColor="0 0 0" diffuseColor="0.2 0.2 0.2" specularColor="0 0 0" shininess="0.0078125" transparency="0"/>
+          </Appearance>
+          <IndexedFaceSet solid="false" colorPerVertex="false" normalPerVertex="true" coordIndex="
+            1 0 7 -1 
+            7 0 6 -1 
+            2 1 8 -1 
+            8 1 7 -1 
+            3 2 9 -1 
+            9 2 8 -1 
+            4 3 10 -1 
+            10 3 9 -1 
+            5 4 11 -1 
+            11 4 10 -1 
+            0 5 6 -1 
+            6 5 11 -1 
+            ">
+            <Coordinate DEF="VTKcoordinates0013" point="
+              0.005 0 1,
+              0.0025 0 1.00433,
+              -0.0025 0 1.00433,
+              -0.005 0 1,
+              -0.0025 0 0.99567,
+              0.0025 0 0.99567,
+              0.005 1 1,
+              0.0025 1 1.00433,
+              -0.0025 1 1.00433,
+              -0.005 1 1,
+              -0.0025 1 0.99567,
+              0.0025 1 0.99567,
+              "/>
+            <Normal DEF="VTKnormals0013" vector="
+              1 0 0,
+              0.5 0 0.866025,
+              -0.5 -0 0.866025,
+              -1 -0 1.22465e-016,
+              -0.5 0 -0.866025,
+              0.5 0 -0.866025,
+              1 0 0,
+              0.5 0 0.866025,
+              -0.5 -0 0.866025,
+              -1 -0 1.22465e-016,
+              -0.5 0 -0.866025,
+              0.5 0 -0.866025,
+              "/>
+          </IndexedFaceSet>
+        </Shape>
+      </Transform>
+      
+<Transform translation="0 0 0" rotation="0 0 1 -0" scale="1 1 1">
+        <Shape>
+          <Appearance>
+            <Material DEF="line1" ambientIntensity="0" emissiveColor="0 0 0" diffuseColor="1 0 0" specularColor="0 0 0" shininess="0.0078125" transparency="1"/>
+          </Appearance>
+          <IndexedFaceSet solid="false" colorPerVertex="false" normalPerVertex="true" coordIndex="
+            1 0 7 -1 
+            7 0 6 -1 
+            2 1 8 -1 
+            8 1 7 -1 
+            3 2 9 -1 
+            9 2 8 -1 
+            4 3 10 -1 
+            10 3 9 -1 
+            5 4 11 -1 
+            11 4 10 -1 
+            0 5 6 -1 
+            6 5 11 -1 
+            ">
+            <Coordinate DEF="VTKcoordinates0000" point="
+              0.995 1 1,
+              0.9975 0.996938 1.00306,
+              1.0025 0.996938 1.00306,
+              1.005 1 1,
+              1.0025 1.00306 0.996938,
+              0.9975 1.00306 0.996938,
+              0.995 0 0,
+              0.9975 -0.00306186 0.00306186,
+              1.0025 -0.00306186 0.00306186,
+              1.005 -4.32978e-019 4.32978e-019,
+              1.0025 0.00306186 -0.00306186,
+              0.9975 0.00306186 -0.00306186,
+              "/>
+            <Normal DEF="VTKnormals0000" vector="
+              -1 -0 0,
+              -0.5 -0.612372 0.612372,
+              0.5 -0.612372 0.612372,
+              1 -8.65956e-017 8.65956e-017,
+              0.5 0.612372 -0.612372,
+              -0.5 0.612372 -0.612372,
+              -1 -0 0,
+              -0.5 -0.612372 0.612372,
+              0.5 -0.612372 0.612372,
+              1 -8.65956e-017 8.65956e-017,
+              0.5 0.612372 -0.612372,
+              -0.5 0.612372 -0.612372,
+              "/>
+          </IndexedFaceSet>
+        </Shape>
+      </Transform>
+      <Transform translation="0 0 0" rotation="0 0 1 -0" scale="1 1 1">
+        <Shape>
+          <Appearance>
+            <Material DEF="line2" ambientIntensity="0" emissiveColor="0 0 0" diffuseColor="1 0 0" specularColor="0 0 0" shininess="0.0078125" transparency="1"/>
+          </Appearance>
+          <IndexedFaceSet solid="false" colorPerVertex="false" normalPerVertex="true" coordIndex="
+            1 0 7 -1 
+            7 0 6 -1 
+            2 1 8 -1 
+            8 1 7 -1 
+            3 2 9 -1 
+            9 2 8 -1 
+            4 3 10 -1 
+            10 3 9 -1 
+            5 4 11 -1 
+            11 4 10 -1 
+            0 5 6 -1 
+            6 5 11 -1 
+            ">
+            <Coordinate DEF="VTKcoordinates0001" point="
+              0.00182574 0.000912871 1.00456,
+              -0.00102362 0.00432942 1.00228,
+              -0.00284936 0.00341655 0.997718,
+              -0.00182574 -0.000912871 0.995436,
+              0.00102362 -0.00432942 0.997718,
+              0.00284936 -0.00341655 1.00228,
+              1.00183 0.500913 0.504564,
+              0.998976 0.504329 0.502282,
+              0.997151 0.503417 0.497718,
+              0.998174 0.499087 0.495436,
+              1.00102 0.495671 0.497718,
+              1.00285 0.496583 0.502282,
+              "/>
+            <Normal DEF="VTKnormals0001" vector="
+              0.365148 0.182574 0.912871,
+              -0.204724 0.865884 0.456435,
+              -0.569872 0.68331 -0.456435,
+              -0.365148 -0.182574 -0.912871,
+              0.204724 -0.865884 -0.456435,
+              0.569872 -0.68331 0.456435,
+              0.365148 0.182574 0.912871,
+              -0.204724 0.865884 0.456435,
+              -0.569872 0.68331 -0.456435,
+              -0.365148 -0.182574 -0.912871,
+              0.204724 -0.865884 -0.456435,
+              0.569872 -0.68331 0.456435,
+              "/>
+          </IndexedFaceSet>
+        </Shape>
+      </Transform>
+      
+    </Transform>
+    <ProximitySensor DEF="PROX_LABEL" size="1e+006 1e+006 1e+006"/>
+    <Collision enabled="false">
+      <Transform DEF="TRANS_LABEL">
+        <Transform translation="0 0 0" scale="0.02 0.02 0.02">
+	<Billboard axisOfRotation='0,0,0'  bboxCenter='0,0,0'>
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="0 0 1" emissiveColor="0 0 1"/>
+            </Appearance>
+            <Text string="A">
+              <FontStyle family='"SANS"' topToBottom="false" justify='"BEGIN" "BEGIN"' size="8"/>
+            </Text>
+          </Shape>
+	  </Billboard>
+        </Transform>
+	
+	 <Transform translation="1 0 0" rotation="0 0 0 3" scale="0.02 0.02 0.02">
+          <Billboard axisOfRotation='0,0,0'  bboxCenter='0,0,0'>
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="0 0 1" emissiveColor="0 0 1"/>
+            </Appearance>
+            <Text string="B">
+              <FontStyle family='"SANS"' topToBottom="false" justify='"BEGIN" "BEGIN"' size="8"/>
+            </Text>
+          </Shape>
+          </Billboard>
+        </Transform>
+	
+	
+	 <Transform translation="1 1 0" rotation="0 0 0 3" scale="0.02 0.02 0.02">
+          <Billboard axisOfRotation='0,0,0'  bboxCenter='0,0,0'>
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="0 0 1" emissiveColor="0 0 1"/>
+            </Appearance>
+            <Text string="C">
+              <FontStyle family='"SANS"' topToBottom="false" justify='"BEGIN" "BEGIN"' size="8"/>
+            </Text>
+          </Shape>
+          </Billboard>
+        </Transform>
+	
+	 <Transform translation="0 1 0" rotation="0 0 0 3" scale="0.02 0.02 0.02">
+          <Billboard axisOfRotation='0,0,0'  bboxCenter='0,0,0'>
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="0 0 1" emissiveColor="0 0 1"/>
+            </Appearance>
+            <Text string="D">
+              <FontStyle family='"SANS"' topToBottom="false" justify='"BEGIN" "BEGIN"' size="8"/>
+            </Text>
+          </Shape>
+          </Billboard>
+        </Transform>
+
+        <Transform translation="0 0 1" scale="0.02 0.02 0.02">
+	<Billboard axisOfRotation='0,0,0'  bboxCenter='0,0,0'>
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="0 0 1" emissiveColor="0 0 1"/>
+            </Appearance>
+            <Text string="A'">
+              <FontStyle family='"SANS"' topToBottom="false" justify='"BEGIN" "BEGIN"' size="8"/>
+            </Text>
+          </Shape>
+	  </Billboard>
+        </Transform>
+	
+	 <Transform translation="1 0 1" rotation="0 0 0 3" scale="0.02 0.02 0.02">
+          <Billboard axisOfRotation='0,0,0'  bboxCenter='0,0,0'>
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="0 0 1" emissiveColor="0 0 1"/>
+            </Appearance>
+            <Text string="B'">
+              <FontStyle family='"SANS"' topToBottom="false" justify='"BEGIN" "BEGIN"' size="8"/>
+            </Text>
+          </Shape>
+          </Billboard>
+        </Transform>
+	
+	
+	 <Transform translation="1 1 1" rotation="0 0 0 3" scale="0.02 0.02 0.02">
+          <Billboard axisOfRotation='0,0,0'  bboxCenter='0,0,0'>
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="0 0 1" emissiveColor="0 0 1"/>
+            </Appearance>
+            <Text string="C'">
+              <FontStyle family='"SANS"' topToBottom="false" justify='"BEGIN" "BEGIN"' size="8"/>
+            </Text>
+          </Shape>
+          </Billboard>
+        </Transform>
+	
+	 <Transform translation="0 1 1" rotation="0 0 0 3" scale="0.02 0.02 0.02">
+          <Billboard axisOfRotation='0,0,0'  bboxCenter='0,0,0'>
+          <Shape>
+            <Appearance>
+              <Material diffuseColor="0 0 1" emissiveColor="0 0 1"/>
+            </Appearance>
+            <Text string="D'">
+              <FontStyle family='"SANS"' topToBottom="false" justify='"BEGIN" "BEGIN"' size="8"/>
+            </Text>
+          </Shape>
+          </Billboard>
+        </Transform>
+
+      </Transform>
+    </Collision>
+    <ROUTE fromNode="PROX_LABEL" fromField="position_changed" toNode="TRANS_LABEL" toField="set_translation"/>
+    <ROUTE fromNode="PROX_LABEL" fromField="orientation_changed" toNode="TRANS_LABEL" toField="set_rotation"/>
+  </Scene>
+</X3D>
