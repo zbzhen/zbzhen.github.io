@@ -908,6 +908,20 @@
           </Billboard>
         </Transform>
 
+	 <Transform translation="1 0.5 0.5" rotation="0 0 0 3" scale="0.02 0.02 0.02">
+          <Billboard axisOfRotation='0,0,0'  bboxCenter='0,0,0'>
+          <Shape>
+            <Appearance>
+              <Material  DEF='po' diffuseColor="0 0 1" emissiveColor="0 0 1" transparency = '1'/>
+            </Appearance>
+            <Text string="O">
+              <FontStyle family='"SANS"' topToBottom="false" justify='"BEGIN" "BEGIN"' size="8"/>
+            </Text>
+          </Shape>
+          </Billboard>
+        </Transform>
+
+
       </Transform>
     </Collision>
     <ROUTE fromNode="PROX_LABEL" fromField="position_changed" toNode="TRANS_LABEL" toField="set_translation"/>

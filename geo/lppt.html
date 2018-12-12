@@ -39,14 +39,18 @@
 <script>
   function setCube()
   {
-  if(document.getElementById('simplelp22__line1').getAttribute('transparency')!= '1')
-     document.getElementById('simplelp22__line1').setAttribute('transparency', '1');
-  else 
-     document.getElementById('simplelp22__line1').setAttribute('transparency', '0.5'); 
   if(document.getElementById('simplelp22__line2').getAttribute('transparency')!= '1')
      document.getElementById('simplelp22__line2').setAttribute('transparency', '1');
   else 
      document.getElementById('simplelp22__line2').setAttribute('transparency', '0.5'); 
+  if(document.getElementById('simplelp22__po').getAttribute('transparency')!= '1')
+     document.getElementById('simplelp22__po').setAttribute('transparency', '1');
+  else 
+     document.getElementById('simplelp22__po').setAttribute('transparency', '0'); 
+  if(document.getElementById('simplelp22__line1').getAttribute('transparency')!= '1')
+     document.getElementById('simplelp22__line1').setAttribute('transparency', '1');
+  else 
+     document.getElementById('simplelp22__line1').setAttribute('transparency', '0.5'); 
   }
 </script>
 <script>
@@ -191,6 +195,7 @@ function restart()
 					<td>
 					    <x3d id = "simplelp00" width='500px' height='500px', margin-left='300px' style="border: none;"> 
 					      <scene>
+						  <OrthoViewpoint >  </OrthoViewpoint>
 						<inline url="./data/simplelp00.x3d" nameSpaceName="simplelp00" mapDEFToID="true" onclick=''/>
 					      </scene> 
 					    </x3d> 
@@ -225,7 +230,7 @@ function restart()
 					<p> (3)斜线与平面所成的角 <br />平面的一条<span class="fragment highlight-blue">斜线</span>
 					和它在平面上的射影所成的<span class="fragment highlight-green">锐角</span>，
 					叫<span class="fragment highlight-red">这条直线和平面所成的角</span>.</p>
-					<p class="fragment"> (4)特殊线面角<br />
+					<p class="fragment"> (4)两类特殊情形<br />
 					  直线垂直于平面，它们所成的角是直角，即
 					<span class="fragment highlight-red">$90$°</span>的角； 
 					<!-- </h5><h5 class="fragment">  直线平行平面，或在平面内，它们所成的角是 -->
@@ -248,6 +253,7 @@ function restart()
 						<td>
 						    <x3d  width='400px' height='400px',  style="border: none;"> 
 						      <scene>
+							  <OrthoViewpoint >  </OrthoViewpoint>
 							<inline url="./data/simplelp.x3d" nameSpaceName="Dice" mapDEFToID="true" onclick=''/>
 						      </scene> 
 						    </x3d> 
@@ -258,14 +264,34 @@ function restart()
 
 				<section style="text-align: left;" data-transition="convex-in fade-out" data-background="rgb(255,255,255)">
 				<p>解：</p>
-					<p class="fragment">1) $\because PA$⊥$AC$，$\therefore$直线$PA$与平面$AC$所成角为$90^\circ$;</p>
-					<p class="fragment">$\because PA$⊥$AC$，$\therefore AB$为直线$PB$在平面$AC$上的射影，
-					从而直线$PB$与平面$AC$所成角为$45^\circ$; 同理直线$PD$与平面$AC$所成角为$45^\circ$.</p>
-					<p class="fragment">2) $PC$与平面$AC$: $\tan\angle PCA=\frac{PA}{AC}=\frac{\sqrt{2}}{2}$</p>
-					<p class="fragment"> &nbsp;&nbsp;$PC$与平面$PAD$: $\tan\angle CPD=\frac{CD}{PD}=\frac{\sqrt{2}}{2}$</p>
-					<p class="fragment"> &nbsp;&nbsp;$PC$与平面$PAB$: $\tan\angle CPB=\frac{BC}{PB}=\frac{\sqrt{2}}{2}$</p>
+					<p >1) $\because PA$⊥平面$AC$，$\therefore$$PA$与平面$AC$所成角为$90^\circ$;</p>
+					<p >$\because PA$⊥平面$AC$，$\therefore$$ AB$为$PB$在平面$AC$上的射影，
+					从而$PB$与平面$AC$所成角为$\angle PBA =45^\circ$; 同理,$PD$与平面$AC$所成角为$\angle PDA =45^\circ$.</p>
+					<p >2) $PC$与平面$AC$: $\tan\angle PCA=\frac{PA}{AC}=\frac{\sqrt{2}}{2}$</p>
+					<p > &nbsp;&nbsp;$PC$与平面$PAD$: $\tan\angle CPD=\frac{CD}{PD}=\frac{\sqrt{2}}{2}$</p>
+					<p > &nbsp;&nbsp;$PC$与平面$PAB$: $\tan\angle CPB=\frac{BC}{PB}=\frac{\sqrt{2}}{2}$</p>
 				</section>
-
+				
+				<section style="text-align: left;" data-transition="convex-in fade-out" data-background="rgb(255,255,255)">
+					<p>如图，在正方体ABCD-A'B'C'D'中，求直线A'B和平面A'B'CD所成的角</p>
+					<div align="center">
+					<table border="0">
+					<td ><img src="./data/exm2.png"  style="border: none;"></td>
+					<td>
+					    <x3d id = "simplelp22" width='400px' height='400px',  style="border: none;"> 
+					      <scene>
+						  <OrthoViewpoint >  </OrthoViewpoint>
+						<inline url="./data/simplelp2.x3d" nameSpaceName="simplelp22" mapDEFToID="true" onclick=''/>
+					      </scene> 
+					    </x3d> 
+					</td>
+					</table>
+					</div>
+					<div align="center">
+					<button onclick="setCube();" style="color:FireBrick">显示或隐藏辅助线</button>
+					</div>
+				</section>
+				
 				<section style="text-align: left;" data-transition="convex-in fade-out" data-background="rgb(255,255,255)">
 					<p>已知AB为的$\odot$O直径，C为圆周上一点，且PA=4，AB=4，BC= $2\sqrt{3}$， PA⊥平面ABC.</p>
 					<p>1)求证：BC⊥平面PAC;</p>
@@ -278,24 +304,6 @@ function restart()
 					</tr></table></div> -->
 				</section>
 
-				<section style="text-align: left;" data-transition="convex-in fade-out" data-background="rgb(255,255,255)">
-					<p>如图，在正方体ABCD-A'B'C'D'中，求直线A'B和平面A'B'CD所成的角</p>
-					<div align="center">
-					<table border="0">
-					<td ><img src="./data/exm2.png"  style="border: none;"></td>
-					<td>
-					    <x3d id = "simplelp22" width='400px' height='400px',  style="border: none;"> 
-					      <scene>
-						<inline url="./data/simplelp2.x3d" nameSpaceName="simplelp22" mapDEFToID="true" onclick=''/>
-					      </scene> 
-					    </x3d> 
-					</td>
-					</table>
-					</div>
-					<div align="center">
-					<button onclick="setCube();" style="color:FireBrick">显示或隐藏辅助线</button>
-					</div>
-				</section>
 
 				<section style="text-align: left;" data-transition="convex-in fade-out" data-background="rgb(255,255,255)">
 					<p>如图，在Rt$\Delta BMC$中，斜边$BM = 5$，其在平面$ABC$上的射影$AB=4，\angle MBC = 60^\circ$，求$MC$与平面$CAB$所成角的正弦值</p>
@@ -307,12 +315,13 @@ function restart()
 
 				<section style="text-align: left;" data-transition="convex-in fade-out" data-background="rgb(255,255,255)">
 					<h3> 总结</h3>
-					<h5 class="fragment"> 直线与平面所成角的求法:（当直线与平面斜交时）</h5>
-					<h5 class="fragment"> 1. <span style="color:FireBrick"> 作 </span>------作出或找到斜线与射影所成的角；</h5>
-					<h5 class="fragment"> &nbsp;&nbsp;&nbsp;&nbsp; 过斜线上一点作平面的垂线，再连结垂足和斜足.</h5>
-					<h5 class="fragment"> 2.<span style="color:FireBrick"> 证 </span>------论证所作或找到的角为所求的角；</h5>
-					<h5 class="fragment"> 3.<span style="color:FireBrick"> 求 </span>------常用解直三角形的方法求角.</h5>
+					<p class="fragment"> 直线与平面所成角的求法:（当直线与平面斜交时）</p>
+					<p class="fragment"> 1. <span style="color:FireBrick"> 作 </span>------作出或找到斜线与射影所成的角；</p>
+					<p class="fragment"> &nbsp;&nbsp;&nbsp;&nbsp; 过斜线上一点作平面的垂线，再连结垂足和斜足.</p>
+					<p class="fragment"> 2.<span style="color:FireBrick"> 证 </span>------论证所作或找到的角为所求的角；</p>
+					<p class="fragment"> 3.<span style="color:FireBrick"> 求 </span>------常用解直三角形的方法求角.</p>
 				</section>
+
 
 				<section data-background="rgb(255,255,255)">
 					<h1>  <span style="color:Blue"> Thank you! </span></h1>

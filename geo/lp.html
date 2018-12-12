@@ -141,9 +141,19 @@ function restart()
 	<table border="0">
 	<td>
 	    <x3d id = "simplelp00" width='500px' height='500px', margin-left='300px' style="border: none;"> 
-	      <scene>
+
+		  <scene>		  
+		  <!-- <OrthoViewpoint centerOfRotation="0.5 0.7 0">  </OrthoViewpoint> -->
+		  <!-- <GeoViewpoint position="0.0 0.0 0" ></GeoViewpoint> -->
+		  <GeoViewpoint position='0.5 0.7 0' znear=-1 zfar=-1></GeoViewpoint>
+		  <!-- <OrthoViewpoint bind='false' centerOfRotation="0.5 0.7 0" description='""' fieldOfView='[-1,-1,1,1]' isActive='false' metadata='X3DMetadataObject' orientation='0,0,0,1' position='0,0,10' zFar='10000' zNear='0.1' ></OrthoViewpoint> -->
+<!-- <GeoViewpoint bind='false' centerOfRotation='0,0,0' description='""' elevationScaling='true' fieldOfView='0.785398' geoOrigin='x3dom.nodeTypes.X3DViewpointNode' geoSystem='['GD','WE']' headlight='undefined' isActive='false' metadata='X3DMetadataObject' navType='undefined' orientation='0,0,1,0' position='0,0,100000' speedFactor='1.0' ></GeoViewpoint>
+ -->
 		<inline url="./data/simplelp00.x3d" nameSpaceName="simplelp00" mapDEFToID="true" onclick=''/>
-	      </scene> 
+			
+			<!-- </GeoViewpoint> -->
+		 </scene> 
+		 
 	    </x3d> 
 	</td>
 	</table>
@@ -158,8 +168,18 @@ function restart()
 	<button onclick="setang4();" style="color:FireBrick">找角</button>
 	华南师大中山附中柯老师提供(仅供学习) 
 	<button onclick="restart();" style="color:FireBrick">重置</button>
+	<p><input type="button" value="changeProjection" onclick="changePerpective()"/></p>
 	</div>
 </div>
+
+	<script type="text/javascript" >
+	<![CDATA[
+	function changePerpective(){
+		document.getElementById('simplelp00__ROOT').runtime.nextView();
+        return false;
+	}
+	]]>
+    </script>
 </body>
 
 
@@ -174,6 +194,10 @@ function restart()
 	<td>
 	    <x3d  width='300px' height='300px', margin-left='300px'> 
 	      <scene>
+<GeoViewpoint bind='false' centerOfRotation='0,0,0' description='""' elevationScaling='true' fieldOfView='0.785398' geoOrigin='x3dom.nodeTypes.X3DViewpointNode' geoSystem='['GD','WE']' headlight='undefined' isActive='false' metadata='X3DMetadataObject' navType='undefined' orientation='0,0,1,0' position='0,0,100000' speedFactor='1.0' ></GeoViewpoint>
+
+		  		  <OrthoViewpoint bind='false' centerOfRotation='0,0,0' description='""' fieldOfView='[-1,-1,1,1]' isActive='false' metadata='X3DMetadataObject' orientation='0,0,0,1' position='0,0,10' zFar='10000' zNear='0.1' ></OrthoViewpoint>
+
 		<inline url="./data/simplelp.x3d" nameSpaceName="Dice" mapDEFToID="true" onclick=''/>
 	      </scene> 
 	    </x3d> 
@@ -181,8 +205,17 @@ function restart()
 	</table>
 	</div>
 	<div align="center">华南师大中山附中柯老师提供(仅供学习)</div>
+	<p><input type="button" value="changeProjection" onclick="changePerpective()"/></p>
 	
 </div>
+	<script type="text/javascript" >
+	<![CDATA[
+	function changePerpective(){
+		document.getElementById('ROOT').runtime.nextView();
+        return false;
+	}
+	]]>
+    </script>
 </body>
 
 
